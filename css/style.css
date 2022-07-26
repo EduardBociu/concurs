@@ -1,7 +1,7 @@
 @import url(colors.css);
 
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@ div.container {
   min-height: 100vh;
   height: fit-content;
   color: var(--dark);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* HEADER */
@@ -201,5 +201,116 @@ div.splash div.caption {
   font-size: 3vw;
   background-color: var(--light);
   padding: 2vh 2vw;
-  transform: rotate(-5deg) translateY(5vh);
+  transform: skewY(-5deg) translateY(-15vh);
+  font-weight: 500;
+  transition: 0.8s all;
+  margin-left: 5vw;
+  border-radius: 1vw;
+}
+
+div.splash div.caption:hover {
+  transform: skewY(0) translateY(-5vh);
+  transition: 0.3s all;
+  border-radius: 0;
+  background-color: var(--gray);
+  color: var(--light);
+  border-bottom-left-radius: 5vw;
+}
+
+div.caption a {
+  margin-left: 5vw;
+  font-weight: 900;
+  border-bottom: 10px solid var(--dark);
+  transition: 0.4s all;
+  padding: 0.5vh 0;
+}
+
+div.caption a:hover {
+  border-bottom: 10px double var(--light);
+  transition: 0.1s all;
+}
+
+/* CONTENT */
+
+section {
+  width: 90vw;
+  margin: 5vh 5vw;
+}
+
+div.heading {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  transition: 0.8s all;
+  padding: 2vh 7vw;
+  border-radius: 5vw;
+}
+
+div.heading:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  transition: 0.4s all;
+  border-radius: 0;
+}
+
+div.heading h1 {
+  min-width: fit-content;
+  font-family: "Marck Script", "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 6vw;
+}
+
+div.heading div.line {
+  margin-left: 2vw;
+  width: 60vw;
+  height: 1vh;
+  background-color: var(--gray);
+  border-radius: 0.5vh;
+}
+
+section p {
+  font-size: 45px;
+  font-weight: 500;
+  padding: 1vh 5vw;
+}
+
+section p span {
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--black);
+}
+
+section p.lspace {
+  transform: translateY(-10vh);
+  transition: 0.8s all;
+}
+
+section p.lspace:hover {
+  transform: translateY(0) rotate(10deg);
+  padding-left: 20vw;
+  border-bottom: 15px solid var(--dark);
+  border-bottom-right-radius: 10vw;
+  transition: 0.6s all;
+  background-color: var(--dark);
+  color: var(--light);
+  border-top-left-radius: 60%;
+}
+
+section p.lspace span {
+  margin-left: 30%;
 }
