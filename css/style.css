@@ -1,0 +1,205 @@
+@import url(colors.css);
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+html,
+body,
+div.container {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--light);
+  overflow-x: hidden;
+}
+
+div.container {
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  color: var(--dark);
+  font-family: "Quicksand", sans-serif;
+}
+
+/* HEADER */
+header {
+  width: 100vw;
+  height: 30vh;
+  background-color: var(--dark);
+  color: var(--light);
+  margin: 0;
+}
+
+div.preheader {
+  width: 100vw;
+  height: 20vh;
+  border-bottom: 2px solid var(--gray);
+
+  /* colomn centered flexbox */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* temporary */
+div.preheader h2.logo {
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin: 1vh 2vw;
+  font-weight: 600;
+}
+
+div.preheader h6 {
+  font-size: 1vw;
+  color: var(--gray);
+  margin: 0.5vh 1vw;
+  text-transform: uppercase;
+}
+
+div.header {
+  width: 100vw;
+  height: 10vh;
+
+  /* row centered flexbox */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+div.header ul {
+  width: fit-content;
+  list-style: none;
+
+  /* row centered flexbox */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+div.header li {
+  width: fit-content;
+  min-width: 7vh;
+  margin: 1vh 1.5vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 300;
+  font-size: 1.3vw;
+  transition: 0.4s all;
+  border-bottom: 2px solid #00000000;
+}
+
+div.header li:hover {
+  border-bottom: 2px solid var(--light);
+  transition: 0.1s all;
+}
+
+/* SPLASH */
+div.splash {
+  width: 99vw;
+  height: 75vh;
+  background-image: url(../img/splash_bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2vh 0;
+  padding: 0 5vw;
+
+  /* left bottom flexbox */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+div.splash div.pdct {
+  width: 15vw;
+  height: 30vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.splash div.id1 {
+  background-image: url(../img/products/01.png);
+  transform: translateY(5vh);
+}
+
+div.splash div.id2 {
+  background-image: url(../img/products/02.png);
+  transform: rotate(10deg) translateY(5vh);
+}
+
+div.splash div.caption {
+  font-size: 3vw;
+  background-color: var(--light);
+  padding: 2vh 2vw;
+  transform: rotate(-5deg) translateY(5vh);
+}
