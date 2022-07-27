@@ -83,6 +83,13 @@ div.preheader h6 {
 div.header {
   width: 100vw;
   height: 10vh;
+  opacity: 0.9;
+
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  z-index: 1;
+  background-color: var(--dark);
 
   /* row centered flexbox */
   display: -ms-flexbox;
